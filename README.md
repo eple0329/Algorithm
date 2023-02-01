@@ -1,8 +1,26 @@
 # Algorithm
 CodeSpace로 Algorithm을 공부하고자 기존 레포를 변경했습니다.
+230201 기준으로 python 권고사항에 따라서 명명 방식을 통일하고자 합니다.
+
+## Type에 따른 명명 방식(python 권고사항)
+| Type | Public | Internal |
+| :--- | :--- | :--- |
+| Packages | `lower_with_under` |  |
+| Modules | `lower_with_under` | `_lower_with_under` |
+| Classes | `CapWords` | `_CapWords` |
+| Exceptions | `CapWords` |  |
+| Functions | `lower_with_under()` | `_lower_with_under()` |
+| Global/Class Constants | `CAPS_WITH_UNDER` | `_CAPS_WITH_UNDER` |
+| Global/Class Variables | `lower_with_under` | `_lower_with_under` |
+| Instance Variables | `lower_with_under` | `_lower_with_under` |
+| Method Names | `lower_with_under()` | `_lower_with_under()` |
+| Function/Method Parameters | `lower_with_under` |  |
+| Local Variables | `lower_with_under` |  |
+
+
 
 ## 다시 풀어야할 문제
-> 1874(221208), 1966(221210), 1654(221211), 17626(230129), 2606*(230129), 1260(230130), 11724(230131), 1541(230131)
+> 1874(221208), 1966(221210), 1654(221211), 17626(230129), 2606*(230129), 1260(230130), 11724(230131), 1541(230131), 1780(230201)
 
 ## 복기할 사항
 
@@ -86,3 +104,9 @@ CodeSpace로 Algorithm을 공부하고자 기존 레포를 변경했습니다.
 > 18870
 > - 진짜 무식하고 더럽게 풀긴 했는데, 이것도 아슬아슬하지만 시간초과에 안걸리더라..?
 > - 셋으로 중복 제거하고, 중복없는 값들을 크기비교해서 딕셔너리에 값으로 순위 정렬하고 원래 리스트를 돌면서 딕셔너리의 값을 불러오는게 생각하기 쉬운 방법이었던것 같다. 나빼고 다 그렇게 품... ㄷㄷ 근데 뭐 나도 이거 시간복잡도 계산해서 어 될거같은데 생각해서 된거니까 이것도 옳은 풀이지 음음
+
+### 230201
+> 2630
+> - 오랜만에 재귀로 문제를 풀어보니 함수의 인자로 어느것을 보내줘야할지 감이 잘 안잡혔다. 더군다나 2차원 배열의 slicing도 numpy가 없으면 안된다는것도 까먹고 있었었고... 재귀를 계속 풀어보다보면 익숙해지고 빨라지겠지만 재귀에 대한 감이 거의 사라졌다는걸 깨달은 날이었다.
+> 1780
+> - 2630의 심화버전인데... 시간초과에서 너무나도 많이 해맸다. 음~ 결국은 확 줄일 수 있는 방법을 찾긴 했는데... 바꾸기 전 코드를 주석으로 달았으니 다시 풀 때 확인해봐도 된다. 너무 철저하게 확인을 하려 한 나머지 당연한것도 확인을 해버렸으니 시간초과가 날 수밖에...
