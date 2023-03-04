@@ -50,6 +50,8 @@ CodeSpace로 Algorithm을 공부하고자 기존 레포를 변경했습니다.
 
 ## solved.ac 로그
 * 230225 CLASS 3++ 달성
+* 230226 SUAPC 2023 Open Contest 참가
+* 230304 성균관대학교 프로그래밍 대회 Open Contest 참가
 
 ## 복기할 사항
 
