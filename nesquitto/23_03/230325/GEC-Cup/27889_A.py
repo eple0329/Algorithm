@@ -1,3 +1,4 @@
+
 A = input()
 if A == "NLCS":
     print("North London Collegiate School")
