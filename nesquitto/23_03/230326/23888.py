@@ -1,6 +1,10 @@
+import sys
+input = sys.stdin.readline
+sys.setrecursionlimit(100000)
+
 a, d = map(int, input().split())
 
-q = int(input())
+q = int(input().rstrip())
 
 def gcd(tmp, b):
     if(b == 0):
