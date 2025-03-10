@@ -20,7 +20,7 @@ public class Main {
 
         for (int i = 0; i < m; i++){
             String tmp = sc.next();
-            if(tmp.chars().allMatch(Character::isDigit)){
+            if(StringToInteger.get(tmp) == null){
                 System.out.println(IntegerToString.get(Integer.parseInt(tmp)));
             }
             else{
