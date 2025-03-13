@@ -26,4 +26,8 @@ while start < end:
     else:
         start += 1
 
+if start == end and sorted_arr[end] * 2 == k:
+    total_count += int(num_count[sorted_arr[end]] * (num_count[sorted_arr[end]]-1)/2)
+
+
 print(total_count)
