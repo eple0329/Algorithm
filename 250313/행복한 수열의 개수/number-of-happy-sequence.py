@@ -23,8 +23,8 @@ def is_happy(num_list, m):
 for i in grid:
     if is_happy(i, m):
         total_count += 1
-for i in range(n):
-    if is_happy([grid[j][i] for j in range(n)], m):
+for i in zip(*grid):
+    if is_happy(i, m):
         total_count += 1
 
 print(total_count)
