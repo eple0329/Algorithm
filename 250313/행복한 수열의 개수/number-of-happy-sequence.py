@@ -5,11 +5,9 @@ grid = [list(map(int, input().split())) for _ in range(n)]
 total_count = 0
 
 def is_happy(num_list, m):
-    tmp = 0
-    if len(num_list) == 1:
-        if m == 1:
-            return True
-        return False
+    tmp = 1
+    if len(num_list) == 1 and m == 1:
+        return True
     for i in range(1, len(num_list)):
         if num_list[i] == num_list[i-1]:
             tmp += 1
