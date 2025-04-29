@@ -6,8 +6,8 @@ r, c = int(r), int(c) # r = y, c = x
 
 point = [c, r]
 axis = dict()
-axis['U'] = [0, 1]
-axis['D'] = [0, -1]
+axis['D'] = [0, 1]
+axis['U'] = [0, -1]
 axis['R'] = [1, 0]
 axis['L'] = [-1, 0]
 reverse = dict()
